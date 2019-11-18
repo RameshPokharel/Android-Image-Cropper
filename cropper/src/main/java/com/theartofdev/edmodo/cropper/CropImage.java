@@ -470,10 +470,8 @@ public final class CropImage {
 
       Intent intent = new Intent();
       intent.setClass(context, cls);
-      Bundle bundle = new Bundle();
-      bundle.putParcelable(CROP_IMAGE_EXTRA_SOURCE, mSource);
-      bundle.putParcelable(CROP_IMAGE_EXTRA_OPTIONS, mOptions);
-      intent.putExtra(CropImage.CROP_IMAGE_EXTRA_BUNDLE, bundle);
+      intent.putExtra(CropImage.CROP_IMAGE_EXTRA_SOURCE, mSource);
+      intent.putExtra(CropImage.CROP_IMAGE_EXTRA_OPTIONS, mOptions);
       return intent;
     }
 
